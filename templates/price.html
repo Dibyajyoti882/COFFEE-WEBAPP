@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEB-PRO</title>
+  <link rel="stylesheet" href="{% static 'css/price.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <nav> <div class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coder Logo" />
+    </div>
+   </nav>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+  <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+</div>
+
+    <div class="nav-button">
+  <a href="{% url 'signin' %}" class="nav-link signin">Sign In</a>
+  <a href="{% url 'signup' %}" class="nav-link signup">Sign Up</a>
+</div>
+ </header>
+  <section class="menu-section">
+    <h1>MENU CARD</h1>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <div class="menu-image">
+          <img src="{% static 'images/Hot coffee.jpeg' %}" alt="Hot Coffee">
+        </div>
+        <div class="menu-header">Hot</div>
+        <ul class="menu-list">
+          <li><span>Flat White</span><span>₹99</span></li>
+          <li><span>Cafe Latte</span><span>₹199</span></li>
+          <li><span>Cappuccino</span><span>₹100</span></li>
+          <li><span>Mocha</span><span>₹125</span></li>
+          <li><span>Americano</span><span>₹95</span></li>
+          <li><span>Caramel Machiato</span><span>₹120</span></li>
+          <li><span>Espresso Martini</span><span>₹95</span></li>
+          <li><span>Parisian Coffee</span><span>₹125</span></li>
+          <li><span>Macchiato</span><span>₹130</span></li>
+          <li><span>Red eye</span><span>₹115</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-image">
+          <img src="{% static 'images/COFFEE.jpeg' %}" alt="Cold Coffee">
+        </div>
+        <div class="menu-header">Cold</div>
+        <ul class="menu-list">
+          <li><span>Cold Coffee</span><span>₹125</span></li>
+          <li><span>Oreo Ice Coffee</span><span>₹130</span></li>
+          <li><span>Frappuccino</span><span>₹120</span></li>
+          <li><span>Spanish Latte</span><span>₹115</span></li>
+          <li><span>Cold java</span><span>₹130</span></li>
+          <li><span>Cold Brew</span><span>₹110</span></li>
+          <li><span>Dalgona Iced Coffee</span><span>₹120</span></li>
+          <li><span>Iced Mocha</span><span>₹130</span></li>
+          <li><span>Nitro Cold Brew</span><span>₹100</span></li>
+          <li><span>Frozen Coffee</span><span>₹130</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo and Tagline -->
+    <div class="footer-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coffee Logo" />
+      <div>
+        <h2>Coffee & Time</h2>
+        <p>Where every sip feels like home.</p>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="footer-subscribe">
+      <h4>Join Our Newsletter</h4>
+      <p>Stay updated with our latest brews and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Coffee & Time. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

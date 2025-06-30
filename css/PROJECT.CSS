@@ -1,0 +1,387 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 60px;
+    width: 80px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links ul li a:hover {
+    color: #ff9800;
+}
+
+.nav-button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #333;
+}
+
+.cart-icon {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    background: #e74c3c;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 8px;
+}
+
+/* Banner */
+.coffee-banner {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #5C3A2E;
+}
+
+.coffee-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/* Products */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4B2E2E;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background-color: #f3e0c8;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    background-color: #b87333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-sm:hover {
+    background-color: #a0522d;
+}
+
+.price {
+    font-weight: bold;
+    color: #4B2E2E;
+    font-size: 1.2rem;
+}
+
+/* Brands */
+.brands {
+  padding: 50px 20px;
+  background-color: #fdf6f0;
+  text-align: center;
+}
+
+.brands-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4b2e2e;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brands-subheading {
+  font-size: 1.1rem;
+  color: #7a5c58;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.brand-logo {
+  max-width: 120px;
+  height: auto;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #3e2723;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    color: #ffe0b2;
+}
+
+.footer-links h4,
+.footer-social h4,
+.footer-subscribe h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    color: #ffc107;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    background-color: #ffc107;
+    color: #3e2723;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links ul {
+        gap: 20px;
+    }
+    .nav-button {
+        margin-top: 15px;
+    }
+    .product-cards {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+    .logo img {
+        height: 50px;
+        width: 60px;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .card {
+        width: 90%;
+    }
+    .brand-logos img {
+        height: 40px;
+        width: 40px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-logo h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Laptop/Desktop */
+@media (min-width: 993px) and (max-width: 1440px) {
+    .navbar {
+        padding: 20px 60px;
+    }
+    .nav-links ul {
+        gap: 50px;
+    }
+    .products {
+        padding: 60px 40px;
+    }
+    .product-cards {
+        gap: 50px;
+    }
+    .card {
+        width: 280px;
+        padding: 30px;
+    }
+    .brands {
+        padding: 60px 40px;
+    }
+    .brand-logos img {
+        height: 70px;
+        width: 70px;
+    }
+}
+

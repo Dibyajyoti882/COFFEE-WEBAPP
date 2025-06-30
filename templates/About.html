@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee & Time</title>
+  <link rel="stylesheet" href="{% static 'css/About.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Coder Logo" />
+      </div>
+    </nav>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="{% url 'cart' %}">🛒 <span id="cart-count">0</span></a>
+    </div>
+    <div class="nav-button">
+      <a href="{% url 'signin' %}" class="nav-link signin">Sign In</a>
+      <a href="{% url 'signup' %}" class="nav-link signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+<section class="about-section">
+  <div class="about-container">
+    <h1>About Us</h1>
+    <p><strong>Welcome to WEB-PRO Coffee</strong> – the heartwarming space where every cup tells a story. We're more than just a coffee shop — we're your daily escape, your creative corner, and your neighborhood’s cozy corner.</p>
+    <p>Founded with a love for perfectly brewed coffee, WEB-PRO Coffee brings together quality beans, skilled baristas, and a community-driven spirit to create an experience you’ll crave every morning.</p>
+
+    <h3>Why People Love Us:</h3>
+    <ul class="about-points">
+      <li>☕ Ethically sourced beans from the best farms around the world</li>
+      <li>🔥 Freshly roasted in-house for that bold and aromatic flavor</li>
+      <li>🍪 A cozy space with free Wi-Fi and fresh bakery items daily</li>
+      <li>💬 Friendly baristas who remember your name and your favorite drink</li>
+      <li>🌱 Eco-friendly cups, compostable packaging, and zero waste mission</li>
+    </ul>
+  </div>
+</section>
+
+<section class="mission-section">
+  <div class="mission-container">
+    <h2>Our Mission</h2>
+    <p>We strive to craft coffee that not only wakes you up — but uplifts your soul. Our mission is to:</p>
+    <ul class="mission-points">
+      <li>🌍 Support sustainable and fair trade coffee production</li>
+      <li>🤝 Build a community space where conversations spark and ideas brew</li>
+      <li>💡 Innovate coffee culture by blending tradition with modern taste</li>
+    </ul>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="team-container">
+    <h2>Meet Our Team</h2>
+    <p>We’re a passionate crew of caffeine connoisseurs, latte artists, and dreamers who believe that great coffee makes great days.</p>
+    <p>From selecting beans to steaming the perfect microfoam, every team member puts their heart into every pour.</p>
+  </div>
+</section>
+
+
+  <!---FOOTER SECTION -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coffee Logo" />
+      <div>
+        <h2>Coffee & Time</h2>
+        <p>Where every sip feels like home.</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Join Our Newsletter</h4>
+      <p>Stay updated with our latest brews and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Coffee & Time. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

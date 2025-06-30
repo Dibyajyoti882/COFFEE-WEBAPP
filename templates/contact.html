@@ -1,0 +1,165 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Coffee & Time</title>
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="{% static 'images/logo.png' %}" alt="Coffee & Time Logo" />
+  </div>
+
+  <nav class="nav-links">
+    <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+  </nav>
+
+  <div class="cart-icon">
+    <a href="{% url 'cart' %}">🛒 <span id="cart-count">0</span></a>
+  </div>
+
+  <div class="nav-button">
+    <a href="{% url 'signin' %}" class="nav-link signin">Sign In</a>
+    <a href="{% url 'signup' %}" class="nav-link signup">Sign Up</a>
+  </div>
+</header>
+
+<main class="contact">
+  <h1>Contact Us</h1>
+  <p>We'd love to hear from you. Please fill out the form below and our team will get back to you shortly.</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name"><i class="fa fa-user"></i> Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+
+        <div class="form-group">
+          <label for="message"><i class="fa fa-comment-dots"></i> Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+  <h2>Contact Information</h2>
+
+  <div class="info-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="info-text">
+      <h4>Address</h4>
+      <p>Coffee And Time, Style Delhi, SC 12001</p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <i class="fas fa-phone"></i>
+    <div class="info-text">
+      <h4>Phone</h4>
+      <p><a href="tel:+918234567890">+91 8234-567-890</a></p>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <i class="fas fa-envelope"></i>
+    <div class="info-text">
+      <h4>Email</h4>
+      <p><a href="mailto:support@coffeetime.com">support@coffeetime.com</a></p>
+    </div>
+  </div>
+
+  <div class="social-media">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <div class="working-hours">
+    <h3>Working Hours</h3>
+    <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
+    <p>Sunday: Closed</p>
+  </div>
+</div>
+</main>
+
+<!---FOOTER SECTION -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coffee Logo" />
+      <div>
+        <h2>Coffee & Time</h2>
+        <p>Where every sip feels like home.</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Join Our Newsletter</h4>
+      <p>Stay updated with our latest brews and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Coffee & Time. All rights reserved.
+  </div>
+</footer>
+
+<script src="{% static 'js/contact.js' %}"></script>
+
+</body>
+</html>

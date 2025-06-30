@@ -1,0 +1,262 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee & Time</title>
+  <link rel="stylesheet" href="{% static 'css/PROJECT.CSS' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <nav> <div class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coder Logo" />
+    </div>
+   </nav>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+  <a href="{% url 'cart' %}">🛒 <span id="cart-count">0</span></a>
+</div>
+
+    <div class="nav-button">
+  <a href="{% url 'signin' %}" class="nav-link signin">Sign In</a>
+  <a href="{% url 'signup' %}" class="nav-link signup">Sign Up</a>
+</div>
+ </header>
+
+      <!-- Headline Section -->
+  <div class="coffee-banner">
+    <img src="{% static 'images/coffee banner.jpg' %}" alt="Coffee break" class="coffee-img">
+  </div>
+</section>
+<!---Hot coffee phase-->
+<section class="products">
+    <h2>Explore the  Hot Coffee</h2>
+    <div class="product-cards">
+      <div class="card">
+        <img src="{% static 'images/flat white.jpeg' %}" alt="flat white" class="card-img">
+        <h3>FLAT WHITE</h3>
+        <p>A flat white is a coffee  drink consisting of milk.</p>
+        <span class="price">₹95</span>
+        <button class="btn-sm" data-name="flat white" data-price="95">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/cafe latte.jpeg' %}" alt="Mocha" class="card-img">
+        <h3>CAFE LATTE</h3>
+        <p>Smooth and creamy this Cafe Latte drink is perfect.</p>
+        <span class="price">₹199</span>
+        <button class="btn-sm" data-name="cafe latte" data-price="199">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Cappuccino.jpeg' %}" alt="Cappuccino" class="card-img">
+        <h3>CAPPUCHINO</h3>
+        <p>A classic hot delight with equal steamed milk foam.</p>
+        <span class="price">₹100</span>
+        <button class="btn-sm" data-name="Cappuccino" data-price="180">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/mocha.jpeg' %}" alt="Mocha" class="card-img">
+        <h3>MOCHA</h3>
+        <p>A blend of rich chocolate & Mocha whipped cream.</p>
+        <span class="price">₹125</span>
+        <button class="btn-sm" data-name="Mocha" data-price="125">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/Americano.jpeg' %}" alt="Americano" class="card-img">
+        <h3>AMERICANO</h3>
+        <p>Americano is a mixing of hot water & black coffee.</p>
+        <span class="price">₹95</span>
+        <button class="btn-sm" data-name="Americano" data-price="95">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/caramel macchiato.jpeg' %}" alt="Caramell machiato" class="card-img">
+        <h3>CARAMEL MACHIATO</h3>
+        <p>A unique combination of rich hot milk sweet vanilla.</p>
+        <span class="price">₹120</span>
+        <button class="btn-sm" data-name="Caramell machiato" data-price="120">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/Espresso Martini.jpeg' %}" alt="Expresso Martini" class="card-img">
+        <h3>ESPRESSO MARTINI</h3>
+        <p>Espresso Martini known as Vodka Alcoholic soft drink.</p>
+        <span class="price">₹95</span>
+        <button class="btn-sm" data-name="Expresso Martini" data-price="95">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/parisian coffee.jpeg' %}" alt="Parisian Hot Chocolate" class="card-img">
+        <h3>PARISIAN COFFEE</h3>
+        <p>A French coffee cream & butter melted  with choco.</p>
+        <span class="price">₹125</span>
+        <button class="btn-sm" data-name="Parisian Hot Chocolate" data-price="125">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/Hot Macchiato.jpeg' %}" alt="Macchiato" class="card-img">
+        <h3>MACCHIATO</h3>
+        <p>Macchiato is a drip coffee mix with a brew hot  milk.</p>
+        <span class="price">₹130</span>
+        <button class="btn-sm" data-name="Macchiato" data-price="130">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/red eye.jpeg' %}" alt="Red Eye" class="card-img">
+        <h3>RED EYE</h3>
+        <p>Black coffee made of Caffine drip coffee.</p>
+        <span class="price">₹115</span>
+        <button class="btn-sm" data-name="Red Eye" data-price="115">Order now</button>
+      </div>
+    </div>
+  </section>
+<!----cold coffee phase-->
+  <section class="products">
+    <h2>Explore the  Cold Coffee</h2>
+    <div class="product-cards">
+      <div class="card">
+        <img src="{% static 'images/cold coffee.jpeg' %}" alt="Cold Coffee" class="card-img">
+        <h3>COLD COFFEE</h3>
+        <p>Cold coffee is made with chilled ice,Brew,cold milk.</p>
+        <span class="price">₹125</span>
+        <button class="btn-sm" data-name="Cold Coffee" data-price="125">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Oreo Iced Coffee.jpeg' %}" alt="Oreo ice coffee" class="card-img">
+        <h3>OREO ICE COFFEE</h3>
+        <p>Oreo Ice Coffee is fill with oreo & cold coffee.</p>
+        <span class="price">₹130</span>
+        <button class="btn-sm" data-name="Oreo ice coffee" data-price="130">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/Frappuchino.jpeg' %}" alt="Frappuccino" class="card-img">
+        <h3>FRAPPUCHINO</h3>
+        <p>Frappuchino made with  cold coffee & Cream ice.</p>
+        <span class="price">₹120</span>
+        <button class="btn-sm" data-name="Frappuccino" data-price="120">Order now</button>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/spanish latte.jpeg' %}" alt="Spanish Latte" class="card-img">
+        <h3>SPANISH LATTE</h3>
+        <p>Spanish Latte is a sweet twist of ice & scalded milk.</p>
+        <span class="price">₹115</span>
+        <button class="btn-sm" data-name="Spanish Latte" data-price="115">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/cold java.jpeg' %}" alt="Cold Java" class="card-img">
+        <h3>COLD JAVA</h3>
+        <p>Cold coffee Java known for rich,chocolatey flavor.</p>
+        <span class="price">₹130</span>
+        <button class="btn-sm" data-name="Cold Java" data-price="130">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/cold brew.jpeg' %}" alt="Cold brew" class="card-img">
+        <h3>COLD BREW</h3>
+        <p>Cold brew is made of Martini Stout ice juice.</p>
+        <span class="price">₹110</span>
+        <button class="btn-sm" data-name="Cold brew" data-price="110">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/Dalgona coffee.jpeg' %}" alt="Dalgona Iced coffee," class="card-img">
+        <h3>DALGONA ICED</h3>
+        <p>It's a hand beaten coffee that origin from Macau.</p>
+        <span class="price">₹120</span>
+        <button class="btn-sm" data-name="Dalgona Iced coffee," data-price="120">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/iced mocha.jpeg' %}" alt="Iced mocha" class="card-img">
+        <h3>ICED MOCHA</h3>
+        <p>Iced mocha made with choco syrup milk & ice.</p>
+        <span class="price">₹130</span>
+        <button class="btn-sm" data-name="Iced mocha" data-price="130">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/nitro cold brew.jpeg' %}" alt="Nitro cold brew" class="card-img">
+        <h3>NITRO COLD BREW</h3>
+        <p>Nitro Brew made by mix of milk and choco caramel.</p>
+        <span class="price">₹100</span>
+        <button class="btn-sm" data-name="Nitro cold brew" data-price="100">Order now</button>
+      </div>
+       <div class="card">
+        <img src="{% static 'images/Frozen Coffee.jpeg' %}" alt="Frozen coffee" class="card-img">
+        <h3>FROZEN COFFEE</h3>
+        <p>Frozen Coffee is made of  hot milk & Choco Scoop.</p>
+        <span class="price">₹130</span>
+        <button class="btn-sm" data-name="Frozen coffee" data-price="130">Order now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+  <div class="brands-content">
+    <h2 class="brands-heading">Trusted by the Best in Coffee</h2>
+    <p class="brands-subheading">We proudly partner with world-renowned coffee brands to bring you the finest brews.</p>
+    <div class="brand-logos">
+      <img src="{% static 'images/Starbucks.jpg' %}" alt="Starbucks" class="brand-logo">
+      <img src="{% static 'images/Nescafe.jpg' %}" alt="Nescafe" class="brand-logo">
+      <img src="{%static 'images/Tim hortons.png' %}" alt="Tim Hortons" class="brand-logo">
+      <img src="{% static 'images/Dunkin-Donuts.png' %}" alt="Dunkin Donuts" class="brand-logo">
+    </div>
+  </div>
+</section>
+
+  <!---FOOTER SECTION -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coffee Logo" />
+      <div>
+        <h2>Coffee & Time</h2>
+        <p>Where every sip feels like home.</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Join Our Newsletter</h4>
+      <p>Stay updated with our latest brews and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Coffee & Time. All rights reserved.
+  </div>
+</footer>
+ <script src="{% static 'js/PROJECT.JS' %}"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

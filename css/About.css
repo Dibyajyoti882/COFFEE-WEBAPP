@@ -1,0 +1,386 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 60px;
+    width: 80px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links ul li a:hover {
+    color: #ff9800;
+}
+
+.nav-button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #333;
+}
+
+.cart-icon {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    background: #e74c3c;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 8px;
+}
+
+/* About Page Styling */
+.about-section, .mission-section, .team-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fefaf6;
+  font-family: 'poppins', sans-serif;
+}
+
+.about-container, .mission-container, .team-container {
+  max-width: 950px;
+  margin: auto;
+  padding: 10px;
+}
+
+.about-section h1,
+.mission-section h2,
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5c3b1c;
+}
+
+.about-section p,
+.mission-section p,
+.team-section p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.mission-section {
+  background-color: #fff8f1;
+}
+
+.team-section {
+  background-color: #f0ece9;
+}
+
+.about-points li,
+.mission-points li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #333;
+}
+
+.about-points li::before,
+.mission-points li::before {
+  content: "✔";
+  color: #b5651d;
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+/* Footer */.about-points li,
+.mission-points li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #333;
+}
+
+.about-points li::before,
+.mission-points li::before {
+  content: "✔";
+  color: #b5651d;
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+.footer {
+    background-color: #3e2723;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    color: #ffe0b2;
+}
+
+.footer-links h4,
+.footer-social h4,
+.footer-subscribe h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    color: #ffc107;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    background-color: #ffc107;
+    color: #3e2723;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .cart-icon {
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section h1,
+  .mission-section h2,
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section p,
+  .mission-section p,
+  .team-section p {
+    font-size: 1rem;
+  }
+
+  .about-points li,
+  .mission-points li {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-links h4,
+  .footer-social h4,
+  .footer-subscribe h4 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav-links ul {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 65px;
+  }
+
+  .nav-links ul {
+    gap: 10px;
+  }
+
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+
+  .about-container,
+  .mission-container,
+  .team-container {
+    padding: 0 10px;
+  }
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}

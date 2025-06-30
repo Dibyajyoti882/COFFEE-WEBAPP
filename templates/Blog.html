@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Blog</title>
+  <link rel="stylesheet" href="{% static 'css/Blog.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Updated Header -->
+  <header class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Coder Logo" />
+      </div>
+    </nav>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+  <a href="{% url 'cart' %}">🛒 <span id="cart-count">0</span></a>
+</div>
+
+    <div class="nav-button">
+      <a href="{% url 'signin' %}" class="nav-link signin">Sign In</a>
+      <a href="{% url 'signup' %}" class="nav-link signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="blog-container container">
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog1.jpg' %}" alt="Coffee Cup" />
+      <div class="blog-text">
+      <h2>
+      <a href="https://indiancoffeeculture.com/2024/09/26/indias-coffee-culture-boom/" target="_blank" rel="noopener noreferrer">
+        INDIA'S COFFEE CULTURE ROOM
+      </a>
+    </h2>
+        <p>India’s economic ascent, coupled with a swelling middle-class consumer base, has made emerging markets such as coffee cafés increasingly appealing to businesses. The Indian middle class, influenced by western trends and with an augmented living standard, perceives coffee more as a symbol of affluence than just a beverage. This paradigm shift in perception has made freshly ground coffee, usually enjoyed outside of home premises, a popular choice among many.</p>
+      </div>
+    </section>
+
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog4.jpg' %}" alt="Coffee Beans" />
+      <div class="blog-text">
+        <h2>
+        <a href="https://levista.in/blogs/news/espresso-coffee-how-to-make-at-home" target="_blank" rel="noopener noreferrer">
+        HOW TO MAKE COFFEE FOR YOUR LOVED ONES
+      </a>
+        </h2>
+        <p>Can I really make espresso at home?
+Yes. You don’t need a fancy cafe setup. If you know how to make espresso coffee and have the right tools, you can brew it at home.
+
+Some use a proper espresso machine. Others try manual methods like a Moka pot or AeroPress. Each one gives a slightly different result, but you can still get that strong, smooth taste.</p>
+      </div>
+    </section>
+  </main>
+  <main class="blog-container container">
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog2.jpg' %}" alt="Coffee Cup" />
+      <div class="blog-text">
+        <h2>
+       <a href="https://indiancoffeeculture.com/2024/06/10/5-things-baristas-hate/" target="_blank" rel="noopener noreferrer">
+        5 THING'S BARISTAS HATE
+      </a>
+        </h2>
+        <p>As coffee culture grows, so does the love for specialty coffee and the unique artistry behind it. Baristas, the experts who bring your favorite brews to life, are passionate about coffee and work hard to create the perfect cup. However, certain customer behaviors can make their job more challenging. If you’ve ever visited beloved coffee shops like Blue Tokai, Thirdwave, or True Black, you’ve likely witnessed the effort baristas put into crafting each drink.</p>
+      </div>
+    </section>
+
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog3.jpg' %}" alt="Coffee Beans" />
+      <div class="blog-text">
+        <h2>
+        <a href="https://theneedforcoffee.com/coffee-blog/the-coffee-collective-09-brand-ambassador" target="_blank" rel="noopener noreferrer">
+        The Coffee Collective-Brand Ambassador
+      </a>
+        </h2>
+        <p>May was packed with events and June is shaping up to be just as eventful. I’ve got two must-attend events lined up, but before we get into that, I’m excited to share some news:
+
+I’ve officially joined Wawe Coffee as their brand ambassador, and I can’t wait to take you along on this coffee journey with me.</p>
+      </div>
+    </section>
+  </main>
+  <main class="blog-container container">
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog5.jpg' %}" alt="Coffee Cup" />
+      <div class="blog-text">
+      <h2>
+       <a href="https://levista.in/blogs/news/best-coffee-powder-brands-in-karnataka" target="_blank" rel="noopener noreferrer">
+        THE BEST COFEE POWDER BRAND IN KARNATAK
+      </a>
+      </h2>
+        <p>Karnataka is one of India’s most recognised coffee-producing regions. With rich soil, high-altitude estates, and a climate that favours slow-growing beans, the state has shaped the way generations of Indians brew their morning cup. From family-run legacy roasters to estate-direct offerings, Karnataka is home to some of the most dependable coffee brands in the country.</p>
+      </div>
+    </section>
+
+    <section class="blog-post-preview">
+      <img src="{% static 'images/blog6.jpg' %}" alt="Coffee Beans" />
+      <div class="blog-text">
+        <h2>
+       <a href="https://levista.in/blogs/news/how-to-buy-premium-coffee-powder-online" target="_blank" rel="noopener noreferrer">
+        HOW TO BUY PREMIUM COFFEE POWDER ONLINE
+      </a>
+        </h2>
+        <p>The first thing is to know what you like. If you’re used to local coffee or instant packets, online options might seem confusing. But it’s not hard once you know what to check. Always begin by looking for fresh roast dates, clear grind size options, and the type of bean, which is usually listed on the product page of a good coffee brand.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo and Tagline -->
+    <div class="footer-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Coffee Logo" />
+      <div>
+        <h2>Coffee & Time</h2>
+        <p>Where every sip feels like home.</p>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'About' %}">ABOUT</a></li>
+        <li><a href="{% url 'price' %}">PRICING</a></li>
+        <li><a href="{% url 'Blog' %}">BLOGS</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+  <div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="footer-subscribe">
+      <h4>Join Our Newsletter</h4>
+      <p>Stay updated with our latest brews and offers.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Coffee & Time. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
